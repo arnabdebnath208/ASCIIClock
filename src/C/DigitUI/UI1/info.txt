@@ -1,0 +1,4 @@
+Digit Width : 15
+Digit Height : 10
+Col Width : 3
+Col Height : 10
