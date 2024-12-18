@@ -5,7 +5,7 @@ A simple ASCII art clock implemented in C.
 ## Features
 
 - Displays current time in ASCII art
-- Customizable display options (coming soon)
+- Customizable colors
 - Lightweight and easy to use
 
 ## Installation
@@ -21,6 +21,33 @@ make
 ```bash
 cd asciiclock/src/C
 ./asciiclock
+
+# To display help
+./asciiclock --help
+
+# To change background color
+./asciiclock -b <color>
+
+# To change digit color
+./asciiclock -d <color>
+
+# To change separator color
+./asciiclock --colon-color <color>
+
+# To change weekday color
+./asciiclock -w <color>
+
+# To change date color
+./asciiclock -d <color>
+
+# To change month color
+./asciiclock -m <color>
+
+# To change year color
+./asciiclock -y <color>
+
+# All color options <color> : Black, Red, Green, Yellow, Blue, Magenta, Cyan, White, DarkGray, LightRed, LightGreen, LightYellow, LightBlue, LightMagenta, LightCyan, LightWhite
+
 ```
 
 ## Screenshots
