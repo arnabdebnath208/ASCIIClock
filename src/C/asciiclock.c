@@ -191,14 +191,15 @@ void printTime(struct tm tm)
     setFontColor(yearFontColorCode);
     printf(" %s",year);
 
-    resetFont();
     printf("%s\n",rightPadding);
     // --------------------------------
     
     printf("%s",bottomPadding);
+    resetFont();
 }
 void clearScreen()
 {
+    setFontBackgroundColor(canvasBackgroundColor); // Setting the canvas background color
     printf("\033[2J"); //  Clear the screen.
     printf("\033[1;1H"); // Bring the cursor to the top-left corner of the screen.
 }

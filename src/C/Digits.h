@@ -2,16 +2,17 @@
 #define DIGITS_H
 #include "fontColor.h"
 
-#define digitWidth 15 // Width of a digit
-#define digitHeight 10 // Height of a digit
-#define colonWidth 3 // Width of a colon
-#define digitFontColorCode LightWhite // Font Color of Digits
-#define colonFontColorCode Magenta // Font Color of Colon
-#define weekDayFontColorCode LightGreen // Font Color of Week Day
-#define dayFontColorCode LightGreen // Font Color of Day
-#define monthFontColorCode LightGreen // Font Color of Month
-#define yearFontColorCode LightGreen // Font Color of Year
+#define DefaultCanvasBackgroundColor BlackBG // Background Color of Clock
+#define DefaultDigitFontColorCode LightWhite // Font Color of Digits
+#define DefaultColonFontColorCode Magenta // Font Color of Colon
+#define DefaultWeekDayFontColorCode LightGreen // Font Color of Week Day
+#define DefaultDayFontColorCode LightGreen // Font Color of Day
+#define DefaultMonthFontColorCode LightGreen // Font Color of Month
+#define DefaultYearFontColorCode LightGreen // Font Color of Year
 
+extern const int digitWidth, digitHeight, colonWidth; // Width and Height of a digit
+extern FontBackgroundColorCode canvasBackgroundColor; // Backround Color for Clock Canvas
+extern FontColorCode digitFontColorCode,colonFontColorCode,weekDayFontColorCode,dayFontColorCode,monthFontColorCode,yearFontColorCode; // Font Color of Digits, Colon, Week Day, Day, Month, Year
 extern char * one, * two, * three, * four, * five, * six, * seven, * eight, * nine, * zero, * fill, * colon; // ASCII Art for Digits
 extern char * digitSpace, * leftPadding, * rightPadding, * topPadding, * bottomPadding; // Padding and Space
 

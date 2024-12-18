@@ -1,5 +1,14 @@
 #include "Digits.h"
 
+FontBackgroundColorCode canvasBackgroundColor = DefaultCanvasBackgroundColor; // Background Color for Clock Canvas
+FontColorCode digitFontColorCode = DefaultDigitFontColorCode; // Font Color of Digits
+FontColorCode colonFontColorCode = DefaultColonFontColorCode; // Font Color of Colon
+FontColorCode weekDayFontColorCode = DefaultWeekDayFontColorCode; // Font Color of Week Day
+FontColorCode dayFontColorCode = DefaultDayFontColorCode; // Font Color of Day
+FontColorCode monthFontColorCode = DefaultMonthFontColorCode; // Font Color of Month
+FontColorCode yearFontColorCode = DefaultYearFontColorCode; // Font Color of Year
+
+
 // ASCII Art for Digits-------------
 char * one = "         888888         888888            888            888            888            888            888            888            888            888";
 char * two = "888888888888888888888888888888888         888            888888888888888888888888888888888888            888            888888888888888888888888888888";
@@ -14,6 +23,10 @@ char * zero = "888888888888888888888888888888888         888888         888888  
 char * fill = "88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888";
 char * colon = "888888                  888888";
 // --------------------------------
+
+const int digitWidth = 15; // Width of a digit
+const int digitHeight = 10; // Height of a digit
+const int colonWidth = 3; // Width of a colon
 
 char * digitSpace = "  "; // Space between digits
 char * leftPadding = "  "; // Padding on the left side of the clock
